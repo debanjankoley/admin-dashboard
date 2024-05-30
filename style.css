@@ -16,7 +16,6 @@
     display: grid;
     grid-template-rows: 85px 100px;
     background-color: white;
-    border: 1px solid black;
 }
 
 .sidebar {
@@ -96,6 +95,13 @@
     flex: 1;
     height: 35px;
     border-radius: 20px;
+    background-color: #e2e8f0;
+    border: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
 }
 
 .user-info p {
@@ -103,6 +109,7 @@
     align-items: center;
     min-width: 250px;
     justify-content: space-between;
+    font-weight: 600;
 }
 
 
@@ -153,5 +160,15 @@
     text-align: center;
     align-items: center;
     font-size: 17px;
-    font-weight: bold;   
+    font-weight: 600;   
+}
+
+.message {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.username {
+    font-size: 22px;
+    font-weight: 600;
 }
