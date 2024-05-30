@@ -13,7 +13,8 @@
 .header {
     grid-row: 1;
     grid-column: 2;
-    height: 200px;
+    display: grid;
+    grid-template-rows: 85px 100px;
     background-color: white;
     border: 1px solid black;
 }
@@ -60,7 +61,7 @@
     padding-bottom: 20px;
     color: white;
     font-size: 22px;
-    font-weight: 550;
+    font-weight: 500;
     padding-left: 28px;
 }
 
@@ -72,18 +73,21 @@
 .user-info p img {
     height: 45px;
     width: 45px;
+    border-radius: 50px;
+    border: 1px solid black;
 }
 
 .header .top {
     display: flex;
-    padding: 20px 40px;
+    padding: 20px 40px 10px 40px;
+    gap: 25px;
     justify-content: space-between;
 }
 
 .search {
     display: flex;
     flex: 1;
-    gap: 22px;
+    gap: 15px;
     align-items: center;
     max-width: 620px;
 }
@@ -97,6 +101,57 @@
 .user-info p {
     display: flex;
     align-items: center;
-    min-width: 300px;
-    justify-content: space-evenly;
+    min-width: 250px;
+    justify-content: space-between;
+}
+
+
+.greeting img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.header .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 20px 40px;
+    gap: 25px;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    gap: 20px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+
+.post ul {
+    display: flex;
+    padding: 0;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.post ul li a {
+    display: grid;
+    width: 100px;
+    height: 45px;
+    background-color: #0ea5e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;   
 }
