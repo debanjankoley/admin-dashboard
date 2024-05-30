@@ -63,3 +63,40 @@
     font-weight: 550;
     padding-left: 28px;
 }
+
+.user-info p svg,
+.search svg {
+    height: 28px;
+}
+
+.user-info p img {
+    height: 45px;
+    width: 45px;
+}
+
+.header .top {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    gap: 22px;
+    align-items: center;
+    max-width: 620px;
+}
+
+.search input {
+    flex: 1;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.user-info p {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    justify-content: space-evenly;
+}
