@@ -172,3 +172,23 @@
     font-size: 22px;
     font-weight: 600;
 }
+
+.main-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: min-content min-content;
+}
+
+.main-content > div > p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-content .projects {
+    grid-row: 1 / 3;
+}
+
+.announcements-content p {
+    font-size: 12px;
+}
