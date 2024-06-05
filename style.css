@@ -174,14 +174,15 @@
 }
 
 .main-content {
-    padding: 30px 30px 40px 20px;
+    padding: 30px 30px 40px 22px;
     display: grid;
     grid-template-columns: auto 265px;
-    grid-template-rows: min-content min-content;
+    grid-template-rows: 350px 350px;
     column-gap: 20px;
     row-gap: 40px;
 }
 
+.projects,
 .announcements,
 .trending {
     display: grid;
@@ -244,4 +245,48 @@ hr {
 .trending-project {
     font-size: 13px;
     color: #64748b;
+}
+
+.projects {
+    grid-template-rows: min-content auto;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.cards {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    border-left: 7px solid #f59e0b;
+    padding: 35px 25px 30px;
+}
+
+.cards svg {
+    height: 22px;
+    fill: #1e293b;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: min-content auto auto;
+    gap: 5px;
+}
+
+.cards > p {
+    font-size: 15px;
+    color: #64748b;
+    align-self: start;
+}
+
+.cards > div {
+    justify-self: end;
+    align-self: end;
+    display: flex;
+    gap: 25px;
 }
